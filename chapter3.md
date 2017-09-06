@@ -84,8 +84,10 @@ Now let’s see an example using the Wage dataset provided by the `ISLR` package
 *** =pre_exercise_code
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
-#None
-# Clean up the environment
+install.packages('ISLR')
+install.packages('ggplot2')
+install.packages('caret')
+install.packages('randomForest')
 
 ```
 
@@ -225,11 +227,12 @@ We will divide the wage column into 12 categories and add another column called 
 *** =pre_exercise_code
 ```{r}
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml3.RData"))
+install.packages('ggplot2')
 ```
 
 *** =sample_code
 ```{r}
-library(qplot)
+library(ggplot2)
 
 # Check for missing values
 
@@ -249,7 +252,7 @@ Wage<- subset(Wage, select=- c(logwage)
 
 *** =solution
 ```{r}
-library(qplot)
+library(ggplot2)
 
 # Check for missing values
 sum(is.na(Wage))
@@ -311,13 +314,18 @@ print(rf_model)
 
 *** =pre_exercise_code
 ```{r}
-library(caret)
+install.packages('caret')
+install.packages('randomForest')
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml4.RData"))
 
 ```
 
 *** =sample_code
 ```{r}
+library(caret)
+library(ggplot2)
+library(randomForest)
+
 # Partition the data into training and test datasets
 
 inTrain <- 
@@ -340,6 +348,10 @@ qplot(age, wage, data=training, colour = education)
 
 *** =solution
 ```{r}
+library(caret)
+library(ggplot2)
+library(randomForest)
+
 # Partition the data into training and test datasets
 
 inTrain <- createDataPartition(y= Wage$wage_range, p=0.7, list=FALSE)
@@ -416,6 +428,9 @@ To check accuracy of your model, calculate RMSE using postResample() function li
 *** =pre_exercise_code
 ```{r}
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml5.RData"))
+library(randomForest)
+library(ggplot2)
+library(caret)
 ```
 
 *** =sample_code
@@ -491,14 +506,6 @@ success_msg("Good work! At this point, you can accept your model and present you
 
 ```
 
-
-
-
-
-
-
-
-
 --- type:NormalExercise lang:r xp:100 skills:1 key:16fc146c35
 ## Improving Your Model
 
@@ -539,7 +546,8 @@ This brings us to the end of this course. Keep finding ways to create better Mac
 
 *** =pre_exercise_code
 ```{r}
-
+library(caret)
+library(randomForest)
 ```
 
 *** =sample_code
