@@ -3,7 +3,6 @@ title       : Machine Learning: Opening up the Black Box
 description : A General Introduction to Machine Learning
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
----
 
 --- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 
 
