@@ -387,7 +387,7 @@ success_msg("Good work!")
 
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:ed3d5ea9ee
+--- type:NormalExercise lang:r xp:100 skills:1 key:f3f334d14c
 ## Check Accuracy
 
 Test your `rf_model` by using the predict function like this:
@@ -428,10 +428,6 @@ compare_result <-
 
 
 # Check accuracy by calculating the RMSE 
-
-
-
-
 
 ```
 
@@ -485,7 +481,7 @@ success_msg("Good work! At this point, you can accept your model and present you
 
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:fc378f3a70
+--- type:NormalExercise lang:r xp:100 skills:1 key:2aa7b40c76
 ## Improving Your Model
 
 
@@ -542,6 +538,7 @@ This brings us to the end of this course. Keep finding ways to create better Mac
 importance(rf_model) 
 
 varImpPlot(rf_model)
+
 ```
 
 *** =sct
