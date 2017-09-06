@@ -84,10 +84,6 @@ Now let’s see an example using the Wage dataset provided by the `ISLR` package
 *** =pre_exercise_code
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
-install.packages('ISLR')
-install.packages('ggplot2')
-install.packages('caret')
-install.packages('randomForest')
 
 ```
 
@@ -95,11 +91,11 @@ install.packages('randomForest')
 ```{r}
 
 # Load the required packages
+
 library(ISLR)
 library(ggplot2)
 library(caret)
 library(randomForest)
-
 
 
 # Get your dataset
@@ -182,10 +178,6 @@ success_msg("Good work!")
 ```
 
 
-
-
-
-
 --- type:NormalExercise lang:r xp:100 skills:1 key:7f777bb686
 
 ## Data Preprocessing
@@ -227,7 +219,7 @@ We will divide the wage column into 12 categories and add another column called 
 *** =pre_exercise_code
 ```{r}
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml3.RData"))
-install.packages('ggplot2')
+
 ```
 
 *** =sample_code
