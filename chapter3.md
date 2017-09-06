@@ -221,6 +221,9 @@ We will divide the wage column into 12 categories and add another column called 
 *** =pre_exercise_code
 ```{r}
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml3.RData"))
+library(qplot)
+library(ISLR)
+library(randomForest)
 ```
 
 *** =sample_code
