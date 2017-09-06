@@ -2,7 +2,7 @@
 title       : How Much Will I Earn?
 description : This chapter introduces the decision tree algorithm. You will learn about random forest algorithm - a variant of the decision tree that improves it and performs better in general. Using random forest algorithm, you will create a model to predict what a person will earn based on their age, education and type of job.
 
----
+
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:aa70bfdacb
 ## Decision Tree Algorithm
