@@ -1,20 +1,21 @@
 ---
-title       : Machine Learning /: Opening up the Black Box
+title       : "Machine Learning: Opening up the Black Box"
 description : "A General Introduction to Machine Learning"
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
+
 
 --- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:ef1b76935a
 ## The Buzzword
 
 The term "Machine Learning" has been around for a while now, but to many it remains a mysterious black box. How does it really work? 
 
-This course will teaching you about the process of machine learning, from getting data to improving the accuracy of the models you will create.  
+This course will teaching you about the process of doing Machine Learning, from getting data to improving the accuracy of the models you will create.  
 
-This course is for people that want to dive right in and get their hands dirty. By the end of the course, you should better understand what's inside the "black box".
+This course is for people that want to dive right in and get their hands dirty. By the end of the course, you should better understand what's inside the "black box".  
 
 According to Wikipedia, Arthur Samuel in 1959 defined Machine Learning as the subfield of computer science that gives computers the ability to learn without being explicitly programmed.
-This means that machines will be given the ability to make inferences and observation by learning from data. **Machine learning is the therefore the science of teaching the machine to identify trends in data and recognize patterns that cannot easily be detected by humans.**
+This means that machines will be given the ability to make inferences and observation by learning from data. Machine learning is the therefore the science of teaching the machine to identify trends in data and recognize patterns that cannot easily be detected by humans.
 
 
 ### `CLASS ACTIVITY:`
