@@ -5,7 +5,7 @@ attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 
---- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:5fd7fae574
+--- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:ef1b76935a
 ## The Buzzword
 
 The term "Machine Learning" has been around for a while now, but to many it remains a mysterious black box. How does it really work? 
