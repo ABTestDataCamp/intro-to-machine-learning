@@ -84,7 +84,7 @@ Now let’s see an example using the Wage dataset provided by the `ISLR` package
 *** =pre_exercise_code
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
-
+install.library("ISLR")
 ```
 
 *** =sample_code
