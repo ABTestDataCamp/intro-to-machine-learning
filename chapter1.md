@@ -3,10 +3,9 @@ title       : Machine Learning: Opening up the Black Box
 description : A General Introduction to Machine Learning
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
----
 
---- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 
 
+--- type:PlainMultipleChoiceExercise lang:r xp:50 skills:1 key:ef1b76935a
 ## The Buzzword
 
 The term "Machine Learning" has been around for a while now, but to many it remains a mysterious black box. How does it really work? 
@@ -32,7 +31,6 @@ From the above definition, which of the following is not a Machine Learning Task
 Take a look at the options. Which task requires explicitly programming the computer?
 
 *** =pre_exercise_code
-
 ```{r}
 # None
 
@@ -48,7 +46,7 @@ msg_success <- "Exactly! Even I can calculate the next 50 leap years and I'm onl
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
---- type:PlainMultipleChoiceExercise lang:r xp:100 skills:1 
+--- type:PlainMultipleChoiceExercise lang:r xp:100 skills:1 key:c57adfc430
 
 ## A Model - The Secret Weapon
 
