@@ -314,9 +314,6 @@ plot(training$earnings, training$s_rating, col = s_rating, main="Regression Mode
 # Print out coefficient 'b'
 
 
-
-
-
 ```
 
 *** =solution
