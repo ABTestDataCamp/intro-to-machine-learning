@@ -225,8 +225,6 @@ test_object("test")
 test_function("dim",
               not_called_msg = "You didn't call `dim()`")
 
-
-
 test_error()
 
 success_msg("Good work!")
@@ -274,7 +272,7 @@ b <- coef(reg_model)[2]
 
 *** =hint
 - Type `?lm` to learn how to use the lm() function
-- Use `abline()` function to fit a line to the plot  
+- Use `abline()` function to fit a line to the plot. Put the model name inside parenthesis.
 - type ?coef to know how to use the coef() function
 
 *** =pre_exercise_code
@@ -301,9 +299,11 @@ summary(reg_model)
 
 # Plot the training set
 
+par(cex=.8)
+plot(training$earnings, training$s_rating, col = s_rating, main="Regression Modelling")
 
 
-# Draw a regression line that represents the model reg_model
+# Draw a regression line that represents the model reg_model. Use the abline() function. Put the name of the model inside the parentheses of abline()
 
 
 
@@ -334,10 +334,9 @@ summary(reg_model)
 par(cex=.8)
 plot(training$earnings, training$s_rating, col = s_rating, main="Regression Modelling")
 
-# Draw a regression line that represents the model reg_model
+# Draw a regression line that represents the model reg_model. Use the abline() function. Put the name of the model inside the parentheses of abline()
+
 abline(reg_model)
-
-
 
 # Print out coefficient 'a'
 
@@ -358,7 +357,6 @@ b
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
 test_object("reg_model")
-
 
 
 test_function("abline",
