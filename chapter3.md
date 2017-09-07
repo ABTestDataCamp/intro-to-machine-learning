@@ -310,9 +310,14 @@ qplot(age, wage, data=training, color = education)
 *** =solution
 ```{r}
 
+
+# wage_range is the column of the Wage dataset that has the actual wages on it 
+
+wage_range <- Wage$wage_range
+
 # Partition the data into training and test datasets
 
-inTrain <- createDataPartition(y= Wage$wage_range, p=0.7, list=FALSE)
+inTrain <- createDataPartition(y= wage_range, p=0.7, list=FALSE)
 
 training <- Wage[inTrain, ]
 
@@ -331,7 +336,6 @@ dim(test)
 
 # Observe plot of training set
 qplot(age, wage, data=training, color = education)
-
 
 # Create your randomForest model
 
