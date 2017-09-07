@@ -299,6 +299,7 @@ test <- test <- Wage[-inTrain, ]
 
 
 # Observe plot of training set
+
 qplot(age, wage, data=training, color = education)
 
 
