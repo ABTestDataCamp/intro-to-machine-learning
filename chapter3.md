@@ -284,13 +284,18 @@ load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/dat
 
 # Partition the data into training and test datasets
 
-inTrain <- createDataPartition(y= Wage$wage_range, p= , list=FALSE)
+# wage_range is the column of the Wage dataset that has the actual wages on it 
+
+wage_range <- Wage$wage_range
+
+inTrain <- createDataPartition(y= wage_range, p= , list=FALSE)
 
 training <- Wage[inTrain, ]
 
 test <- test <- Wage[-inTrain, ]
 
 # Print out training and test sets and show the dimensions of each set
+# Hint: use the head() and dim() functions!
 
 
 # Observe plot of training set
@@ -314,6 +319,7 @@ training <- Wage[inTrain, ]
 test <- Wage[-inTrain, ]
 
 # Print out first few observations of the training and test sets and show the dimensions of each set
+# Hint: use the head() and dim() functions!
 
 head(training)
 
