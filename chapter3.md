@@ -238,7 +238,6 @@ test_function("qplot",
               not_called_msg = "You didn't call `qplot()`")
 test_object("Wage")
 
-
 test_error()
 
 success_msg("Good work!")
