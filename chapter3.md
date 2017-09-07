@@ -508,11 +508,9 @@ This brings us to the end of this course. Keep finding ways to create better Mac
 ```{r}
 library(caret)
 library(randomForest)
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_5337/datasets/ml5.RData"))
 rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
-wage_range <- Wage$wage_range
-inTrain <- createDataPartition(y=wage_range , p=0.7, list=FALSE)
-training <- Wage[inTrain, ]
-test <- Wage[-inTrain, ]
+ 
 ```
 
 *** =sample_code
