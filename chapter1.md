@@ -15,7 +15,7 @@ This course will teach you about the process of doing Machine Learning, from get
 This course is for people that want to dive right in and get their hands dirty. By the end of the course, you should better understand what's inside the "black box".  
 
 According to Wikipedia, Arthur Samuel in 1959 defined Machine Learning as the subfield of computer science that gives computers the ability to learn without being explicitly programmed.
-This means that machines will be given the ability to make inferences and observation by learning from data. **Machine learning is the therefore the science of teaching the machine to identify trends in data and recognize patterns that cannot easily be detected by humans.**
+This means that machines will be given the ability to make inferences and observation by learning from data. In other words, **machine learning is the science of teaching the machine to identify trends and patterns in data that cannot easily be detected by humans.**
 
 
 ### `CLASS ACTIVITY:`
