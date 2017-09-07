@@ -169,11 +169,11 @@ emp_data  <- data.frame(earnings, s_rating)
 
 # Partition `emp_data` into training and test datasets.
 
-inTrain <- 
+inTrain <- createDataPartition(y =, p=, list=     )
 
 training <- emp_data[inTrain,]
 
-test <- 
+test <- emp_data[-inTrain, ]
 
 # Type the variable names `training`  and `test` to see the contents of those variables.
 
