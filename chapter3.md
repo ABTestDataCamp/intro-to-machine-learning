@@ -275,6 +275,7 @@ print(rf_model)
 *** =pre_exercise_code
 ```{r}
 library(caret)
+library(randomForest)
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml4.RData"))
 
 ```
@@ -292,7 +293,7 @@ inTrain <- createDataPartition(y= , p= , list=FALSE)
 
 training <- Wage[inTrain, ]
 
-test <- test <- Wage[-inTrain, ]
+test <- Wage[-inTrain, ]
 
 # Print out training and test sets and show the dimensions of each set
 # Hint: use the head() and dim() functions!
@@ -352,12 +353,13 @@ test_object("test")
 
 
 test_function("dim",
-              not_called_msg = "You didn't call `dim()`")
+              not_called_msg = "You didn't call `dim()` twice for `training` and `test`")
+
+test_function("head", not_called_msg = "You didn't call `head()` twice for `training` and `test`)
 
 test_function("qplot",
               not_called_msg = "You didn't call `plot()`")
               
-             
 test_error()
 
 success_msg("Good work!")
