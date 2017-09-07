@@ -459,8 +459,8 @@ test_object("pred_wage_range")
 test_function("data.frame",
               not_called_msg = "You didn't call `data.frame()`")
 
-test_function("compare_result", 
-              not_called_msg = "You didn't call the head() function`")
+test_function("head", 
+              not_called_msg = "You didn't call the `head() function`")
 
 test_function("postResample",
               not_called_msg = "You didn't call `postResample()`")
@@ -487,8 +487,8 @@ If any of these reduces the RMSE significantly, you have succeeded in improving 
 
 
 *** =instructions
-- Call importance() function on the rf_model model  to check how the attributes used as predictors affect our model
-- Call varImpPlot() function on the model to visually check variable importance
+- Call importance() function on `rf_model` to check how the attributes used as predictors affect our model
+- Call varImpPlot() function on `rf_model` to visually check variable importance
 - What do you notice?
 
 
@@ -520,6 +520,11 @@ library(randomForest)
 ```{r}
 # Check what attributes affect our model the most 
 
+# Use the `importance()` function on `rf_model` below
+
+
+# Use the `varImpPlot()` function on `rf_model` below
+
 ```
 
 *** =solution
@@ -527,7 +532,11 @@ library(randomForest)
 
 # Check what attributes affect our model the most 
 
+# Use the `importance()` function on `rf_model` below
+
 importance(rf_model) 
+
+# Use the `varImpPlot()` function on `rf_model` below
 
 varImpPlot(rf_model)
 ```
@@ -535,4 +544,12 @@ varImpPlot(rf_model)
 *** =sct
 ```{r}
 
+test_function("importance",
+              not_called_msg = "You didn't call `importance()`")
+
+test_function("varImpPlot", 
+              not_called_msg = "You didn't call `varImpPlot()`")
+              
+              
+              
 ```
