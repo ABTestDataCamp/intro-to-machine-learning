@@ -167,9 +167,9 @@ emp_data  <- data.frame(earnings, s_rating)
 *** =sample_code
 ```{r}
 
-# Partition `emp_data` into training and test datasets.
+# Partition `emp_data` into training and test datasets. Note: `y=emp_data$s_rating` means the `s_rating` variable of the `emp_data` dataset.
 
-inTrain <- createDataPartition(y =, p=, list=     )
+inTrain <- createDataPartition(y= emp_data$s_rating, p=  , list= )
 
 training <- emp_data[inTrain,]
 
@@ -188,7 +188,7 @@ test <- emp_data[-inTrain,]
 *** =solution
 ```{r}
 
-# Partition `emp_data` into `training` and `test` datasets.
+# Partition `emp_data` into `training` and `test` datasets. Note: `y=emp_data$s_rating` means the `s_rating` variable of the `emp_data` dataset.
 
 inTrain <- createDataPartition(y= emp_data$s_rating, p=0.6, list=FALSE)
 
