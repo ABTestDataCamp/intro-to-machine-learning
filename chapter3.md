@@ -198,7 +198,7 @@ library(ggplot2)
 
 # Some exploratory data analysis
 
-qplot(age, wage, data=Wage, colour = race)
+qplot(age, wage, data=Wage, color = race)
 
 # Remove unnecessary variables
 
@@ -219,8 +219,8 @@ sum(is.na(Wage))
 
 # Some exploratory data analysis
 
-#qplot(age, wage, data=Wage, colour = race)
-qplot(age, wage, data=Wage, colour = education)
+#qplot(age, wage, data=Wage, color = race)
+qplot(age, wage, data=Wage, color = education)
 
 # Remove unnecessary variables
 # Wage<- subset(Wage, select=- c(logwage))  remove this line after creating pre-exercise code
@@ -359,7 +359,7 @@ test_object("test")
 
 
 test_function("dim",
-              not_called_msg = "You didn't call `dim()` twice for `training` and `test`")
+              not_called_msg = "You need to call `dim()` twice for `training` and `test`")
 
 test_function("head", not_called_msg = "You need to call `head()` twice for `training` and `test`")
 
@@ -428,7 +428,7 @@ postResample(test$wage_range, pred_wage_range)
 
 # Test your `rf_model` by using the predict function.
 
-pred_wage_range<- predict(rf_model, test)
+pred_wage_range <- predict(rf_model, test)
 
 # Compare predicted wage to original wage of test dataset.This creates a data set with one column having the actual data, and one column having the predicted data.
 
