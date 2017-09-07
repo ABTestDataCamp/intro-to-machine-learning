@@ -14,6 +14,8 @@ Suppose we have a sample of `30 students` with two input variables `Gender` (Boy
 
 A decision tree is useful here in that it will segregate the students based on all values of two variable. The variable which creates the best similar sets of students (i.e. sets which are dissimilar to each other). 
 
+
+
  ![](http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/dtree.png)
 
 In the figure above, you can see that variable Gender is able to identify best subpopulation sets compared to the variable height.
@@ -25,9 +27,8 @@ The `Random Forest` algorithm is a variant of decision tree algorithm. The algor
 Which of the following types of questions might you try to answer with a Random Forests model?
 
 *** =instructions
-
-- Is there a direct relationship between money and happiness?
-- What is a new customer to an online store likely to purchase?
+-Is there a direct relationship between money and happiness?
+-What is a new customer to an online site likely to purchase?
 
 *** =hint
 - Random forests are useful for non-linear questions.
@@ -42,9 +43,10 @@ Which of the following types of questions might you try to answer with a Random 
 
 msg_bad <- "Sorry. Try again!"
 msg_success <- "Great!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 
 ```
+
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:764d16ea92
 ## About the Data
@@ -70,7 +72,7 @@ Now let’s see an example using the Wage dataset provided by the `ISLR` package
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
 
-Wage <- <- read.csv("http://assets.datacamp.com/production/course_5337/datasets/wages.csv", stringsAsFactors = FALSE)
+Wage <- <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_5337/datasets/wage.csv, stringsAsFactors = FALSE)
 
 ```
 
@@ -84,7 +86,7 @@ library(caret)
 
 # Get your dataset
 
-
+Wage
 
 #Know more about the Wage dataset.
 
