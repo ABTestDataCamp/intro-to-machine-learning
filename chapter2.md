@@ -173,7 +173,7 @@ inTrain <- createDataPartition(y =, p=, list=     )
 
 training <- emp_data[inTrain,]
 
-test <- emp_data[-inTrain, ]
+test <- emp_data[-inTrain,]
 
 # Type the variable names `training`  and `test` to see the contents of those variables.
 
@@ -192,9 +192,9 @@ test <- emp_data[-inTrain, ]
 
 inTrain <- createDataPartition(y= emp_data$s_rating, p=0.6, list=FALSE)
 
-training <- emp_data[inTrain, ]
+training <- emp_data[inTrain,]
 
-test <- emp_data[-inTrain, ]
+test <- emp_data[-inTrain,]
 
 # Type the variable names `training`  and `test` to see the contents of those variables.
 
