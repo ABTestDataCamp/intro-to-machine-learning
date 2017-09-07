@@ -339,8 +339,8 @@ qplot(age, wage, data=training, color = education)
 
 # Create your randomForest model
 
-rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
-rf_model
+#rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
+#rf_model
 ```
 
 *** =sct
