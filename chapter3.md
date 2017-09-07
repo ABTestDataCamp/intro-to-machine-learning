@@ -86,7 +86,7 @@ library(caret)
 
 # Get your dataset
 
-
+Wage
 
 #Know more about the Wage dataset.
 
@@ -112,7 +112,7 @@ library(caret)
 
 # Print your dataset
 
-Data(Wage)
+Wage
 
 #Get to know more about the Wage dataset.
 
