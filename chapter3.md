@@ -70,7 +70,7 @@ Now let’s see an example using the Wage dataset provided by the `ISLR` package
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
 
-Wage <- <- read.csv("http://assets.datacamp.com/production/course_5337/wages.csv, stringsAsFactors = FALSE)
+Wage <- <- read.csv("http://assets.datacamp.com/production/course_5337/datasets/wages.csv", stringsAsFactors = FALSE)
 
 ```
 
@@ -110,7 +110,7 @@ library(caret)
 
 # Print your dataset
 
-Data(Wage)
+Wage
 
 #Get to know more about the Wage dataset.
 
