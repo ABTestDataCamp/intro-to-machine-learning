@@ -407,19 +407,19 @@ rf_model <- randomForest(wage_range ~ age + jobclass + education, data = trainin
 
 # Test your `rf_model` by using the predict function.
 
-pred_wage_range<- 
+pred_wage_range <-
 
-# Compare predicted wage to original wage of test dataset.
+# Compare predicted wage to original wage of test dataset. This creates a data set with one column having the actual data, and one column having the predicted data.
 
-compare_result <- 
+compare_result <- data.frame(test$wage_range, pred_wage_range)
   
 # Print out the first few observation of compare_result 
 
-
+head(compare_result)
 
 # Check accuracy by calculating the RMSE 
 
-
+postResample(test$wage_range, pred_wage_range)
 
 
 
@@ -432,7 +432,7 @@ compare_result <-
 
 pred_wage_range<- predict(rf_model, test)
 
-# Compare predicted wage to original wage of test dataset.
+# Compare predicted wage to original wage of test dataset.This creates a data set with one column having the actual data, and one column having the predicted data.
 
 compare_result <- data.frame(test$wage_range, pred_wage_range)
 
@@ -460,9 +460,7 @@ test_object("pred_wage_range")
 test_function("data.frame",
               not_called_msg = "You didn't call `data.frame()`")
 
-test_object("compare_result")
 
-              
 test_function("postResample",
               not_called_msg = "You didn't call `postResample()`")
 
