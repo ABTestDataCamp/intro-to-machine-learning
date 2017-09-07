@@ -377,7 +377,7 @@ success_msg("Good work!")
 
 Test your `rf_model` by using the predict function like this:
 
-`pred_wage<- predict(model_name, test_data)`
+`pred_wage <- predict(model_name, test_data)`
 
 To check accuracy of your model, calculate RMSE using postResample() function like this:
 
