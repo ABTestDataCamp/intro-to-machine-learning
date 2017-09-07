@@ -282,13 +282,13 @@ load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/dat
 *** =sample_code
 ```{r}
 
-# Partition the data into training and test datasets
-
-# wage_range is the column of the Wage dataset that has the actual wages on it 
+# wage_range is the column of the Wage dataset that has the actual wages on it. 
 
 wage_range <- Wage$wage_range
 
-inTrain <- createDataPartition(y= wage_range, p= , list=FALSE)
+# Partition the data into training and test datasets. Set y = to wage_range
+
+inTrain <- createDataPartition(y= , p= , list=FALSE)
 
 training <- Wage[inTrain, ]
 
@@ -315,9 +315,9 @@ qplot(age, wage, data=training, color = education)
 
 wage_range <- Wage$wage_range
 
-# Partition the data into training and test datasets
+# Partition the data into training and test datasets. Set y = to wage_range
 
-inTrain <- createDataPartition(y= wage_range, p=0.7, list=FALSE)
+inTrain <- createDataPartition(y=wage_range , p=0.7, list=FALSE)
 
 training <- Wage[inTrain, ]
 
