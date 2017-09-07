@@ -267,37 +267,34 @@ print(rf_model)
 - Make p=0.7 and set list=FALSE
 - To print a variable to the console, simply type the name of the variable on a new line.
 - Use `qplot()` for the third instruction. Just as you did in the previous exercise.
-- Do you notice that the plot created usinf training set is similar to the plot done on the whole Wage dataset. This is because the createDataPartition function splits the data evenly into training and test sets.
+- Do you notice that the plot created of the training set is similar to the plot done on the whole Wage dataset? This is because the createDataPartition function splits the data evenly into training and test sets.
+
 - For the last instruction, set `ntree` to 800. Print rf_model to console.
 - Use head() function for the second instruction. To print a variable to the console, simply type the name of the variable on a new line. 
 
 *** =pre_exercise_code
 ```{r}
-install.packages('caret')
-install.packages('randomForest')
+library(caret)
 load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml4.RData"))
 
 ```
 
 *** =sample_code
 ```{r}
-library(caret)
-library(ggplot2)
-library(randomForest)
 
 # Partition the data into training and test datasets
 
-inTrain <- 
+inTrain <- createDataPartition(y= Wage$wage_range, p= , list=FALSE)
 
-training <- 
+training <- Wage[inTrain, ]
 
-test <- 
+test <- test <- Wage[-inTrain, ]
 
 # Print out training and test sets and show the dimensions of each set
 
 
 # Observe plot of training set
-qplot(age, wage, data=training, colour = education)
+qplot(age, wage, data=training, color = education)
 
 
 # Create your randomForest model
@@ -307,9 +304,6 @@ qplot(age, wage, data=training, colour = education)
 
 *** =solution
 ```{r}
-library(caret)
-library(ggplot2)
-library(randomForest)
 
 # Partition the data into training and test datasets
 
@@ -330,7 +324,7 @@ dim(training)
 dim(test)
 
 # Observe plot of training set
-qplot(age, wage, data=training, colour = education)
+qplot(age, wage, data=training, color = education)
 
 
 # Create your randomForest model
