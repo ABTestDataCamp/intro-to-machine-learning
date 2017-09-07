@@ -16,7 +16,7 @@ A decision tree is useful here in that it will segregate the students based on a
 
 
 
- ![](http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/dtree.png)
+![](http://s3.amazonaws.com/assets.datacamp.com/production/course_5337/datasets/dtree.png)
 
 In the figure above, you can see that variable Gender is able to identify best subpopulation sets compared to the variable height.
 
