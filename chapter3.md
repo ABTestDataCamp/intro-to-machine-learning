@@ -72,7 +72,7 @@ Now let’s see an example using the Wage dataset provided by the `ISLR` package
 ```{r}
 # You can also prepare your dataset in a specific way in the pre exercise code
 
-Wage <- <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_5337/datasets/wage.csv, stringsAsFactors = FALSE)
+Wage <- read.csv('http://s3.amazonaws.com/assets.datacamp.com/production/course_5337/datasets/wage.csv', stringsAsFactors = FALSE)
 
 ```
 
