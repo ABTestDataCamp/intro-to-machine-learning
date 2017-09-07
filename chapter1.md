@@ -10,12 +10,12 @@ attachments :
 
 The term "Machine Learning" has been around for a while now, but to many it remains a mysterious black box. How does it really work? 
 
-This course will teaching you about the process of doing Machine Learning, from getting data to improving the accuracy of the models you will create.  
+This course will teach you about the process of doing Machine Learning, from getting data to improving the accuracy of the models you will create.  
 
 This course is for people that want to dive right in and get their hands dirty. By the end of the course, you should better understand what's inside the "black box".  
 
 According to Wikipedia, Arthur Samuel in 1959 defined Machine Learning as the subfield of computer science that gives computers the ability to learn without being explicitly programmed.
-This means that machines will be given the ability to make inferences and observation by learning from data. Machine learning is the therefore the science of teaching the machine to identify trends in data and recognize patterns that cannot easily be detected by humans.
+This means that machines will be given the ability to make inferences and observation by learning from data. **Machine learning is the therefore the science of teaching the machine to identify trends in data and recognize patterns that cannot easily be detected by humans.**
 
 
 ### `CLASS ACTIVITY:`
@@ -50,16 +50,12 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 ## A Model - The Secret Weapon
 
-A human can learn the voices of 10 (maybe 100) co-workers and be able to identify them without looking. A machine, however, can learn the voices of over 10,000 people and be able to predict whose voice it is.
-
-How?  
-
-Answer = Machine Learning!
+A human can learn the voices of 10 (or perhaps 100) co-workers and be able to identify them without looking. A machine, however, can learn the voices of over 10,000 people and be able to predict whose voice it is. How? Machine Learning!
 
 Processes involved in Machine Learning include the following:
 
 - Get data
-- Preprocess (Clean, Prepare, Manipulate Data & Exploratory Data Analysis)
+- Preprocessing (Clean, Prepare, Manipulate Data & Exploratory Data Analysis)
 - Train Model
 - Test Model
 - Post-Process (Visualize, Evaluate, Improve Model & Present)
@@ -72,8 +68,7 @@ When you plug in historical data into a machine learning algorithm, you get a mo
 
 In the above example, the machine uses a model that takes in an input (a person’s voice), does some processing and predicts the name of the person as the output. 
 
-Testing and evaluating the models you will create comes up in later chapters.
-You will also learn to improve your model.
+In chapter 3, you learn how to test, evaluate, and improve your model.
 
 
 ### `CLASS ACTIVITY:`
