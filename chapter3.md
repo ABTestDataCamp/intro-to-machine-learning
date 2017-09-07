@@ -357,12 +357,7 @@ test_function("dim",
 test_function("qplot",
               not_called_msg = "You didn't call `plot()`")
               
-test_function("randomForest",
-              not_called_msg = "You didn't call `randomForest()`")
-              
-test_object("rf_model")
-              
-
+             
 test_error()
 
 success_msg("Good work!")
