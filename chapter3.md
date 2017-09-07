@@ -276,7 +276,7 @@ print(rf_model)
 ```{r}
 library(caret)
 library(randomForest)
-load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/datasets/ml4.RData"))
+load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_5337/datasets/ml4.RData"))
 
 ```
 
