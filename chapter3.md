@@ -426,11 +426,11 @@ postResample(test$wage_range, pred_wage_range)
 *** =solution
 ```{r}
 
-# Test your `rf_model` by using the predict function.
+# Test your `rf_model` by using the predict() function.
 
 pred_wage_range <- predict(rf_model, test)
 
-# Compare predicted wage to original wage of test dataset.This creates a data set with one column having the actual data, and one column having the predicted data.
+# Compare predicted wage to original wage of test dataset. This creates a data set with one column having the actual data, and one column having the predicted data.
 
 compare_result <- data.frame(test$wage_range, pred_wage_range)
 
@@ -450,9 +450,6 @@ postResample(test$wage_range, pred_wage_range)
               
 test_function("predict",
               not_called_msg = "You need to call `predict()`")
-              
-test_object("pred_wage_range")
-
               
 test_function("data.frame",
               not_called_msg = "You need to call `data.frame()`")
