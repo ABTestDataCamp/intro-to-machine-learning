@@ -436,7 +436,7 @@ pred_wage_range<- predict(rf_model, test)
 
 compare_result <- data.frame(test$wage_range, pred_wage_range)
 
-# Print out the first few observation of compare_result 
+# Print out the first few observations of compare_result. Use the head() function.
 
 head(compare_result) 
 
@@ -453,18 +453,17 @@ postResample(test$wage_range, pred_wage_range)
 test_function("predict",
               not_called_msg = "You didn't call `predict()`")
               
-            
 test_object("pred_wage_range")
 
               
 test_function("data.frame",
               not_called_msg = "You didn't call `data.frame()`")
 
+test_function("compare_result", 
+              not_called_msg = "You didn't call the head() function`")
 
 test_function("postResample",
               not_called_msg = "You didn't call `postResample()`")
-
-
 
 test_error()
 
