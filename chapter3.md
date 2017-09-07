@@ -307,6 +307,9 @@ qplot(age, wage, data=training, color = education)
 # Create your randomForest model
 
 
+# Print `rf_model` to the console
+rf_model
+
 ```
 
 *** =solution
@@ -341,8 +344,11 @@ qplot(age, wage, data=training, color = education)
 
 # Create your randomForest model
 
-#rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
-#rf_model
+rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
+
+# Print `rf_model` to the console
+rf_model
+
 ```
 
 *** =sct
@@ -357,8 +363,8 @@ test_function("dim",
 
 test_function("head", not_called_msg = "You didn't call `head()` twice for `training` and `test`)
 
-test_function("qplot",
-              not_called_msg = "You didn't call `plot()`")
+test_function("randomForest",
+              not_called_msg = "You didn't call `randomForest()`")
               
 test_error()
 
@@ -392,6 +398,8 @@ load(url("http://s3.amazonaws.com/assets.datacamp.com/production/course_4925/dat
 library(randomForest)
 library(ggplot2)
 library(caret)
+
+rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
 ```
 
 *** =sample_code
