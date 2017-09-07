@@ -508,6 +508,7 @@ This brings us to the end of this course. Keep finding ways to create better Mac
 ```{r}
 library(caret)
 library(randomForest)
+rf_model <- randomForest(wage_range ~ age + jobclass + education, data = training, importance = TRUE, ntree=800)
 ```
 
 *** =sample_code
