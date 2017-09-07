@@ -27,11 +27,12 @@ The `Random Forest` algorithm is a variant of decision tree algorithm. The algor
 Which of the following types of questions might you try to answer with a Random Forests model?
 
 *** =instructions
--Is there a direct relationship between money and happiness?
--What is a new customer to an online site likely to purchase?
+-If you make more money, will you be happier?
+-What is a new customer to a web store likely to purchase?
+-Is it true that what goes up must come down?
 
 *** =hint
-- Random forests are useful for non-linear questions.
+- Random forests are useful for finding relationships that can't be predicted linearly.
 
 *** =pre_exercise_code
 ```{r}
@@ -43,7 +44,7 @@ Which of the following types of questions might you try to answer with a Random 
 
 msg_bad <- "Sorry. Try again!"
 msg_success <- "Great!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 
 ```
 
@@ -56,14 +57,11 @@ The first step in Machine Learning is getting your data. This step involves find
 Now let’s see an example using the Wage dataset provided by the `ISLR` package. 
 
 *** =instructions
-- The required packages are loaded for you
-- Use `data(Wage)` function to get the `Wage` dataset into your workspace
 - Know more about the Wage dataset. Use str() and dim() on the Wage dataset. Can you interpret the results?
 - Call head() and tail() on your dataset to reveal the first and last 6 observations.
 - Finally, call the summary() function to generate a summary of the dataset. What does the printout tell you?
 
 *** =hint
-- Use library() function for the first instruction.
 - The str() function gives you an overview of the different variables of the data.
 - The dim() function tells you the number of observations and variables respectively.
 - The summary() function returns several measures for each variable. Such as the maximum observed value, the mean and many more!
@@ -79,10 +77,6 @@ Wage <- read.csv('http://s3.amazonaws.com/assets.datacamp.com/production/course_
 *** =sample_code
 ```{r}
 
-# Load the required packages
-
-library(ggplot2)
-library(caret)
 
 # Get your dataset
 
@@ -105,10 +99,6 @@ Wage
 *** =solution
 ```{r}
 
-# Load the required packages
-
-library(ggplot2)
-library(caret)
 
 # Print your dataset
 
@@ -133,12 +123,6 @@ summary(Wage)
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-
-
-test_function("data",
-              not_called_msg = "You didn't call `data()`")
-
 
 test_function("str",
               not_called_msg = "You didn't call `str()`")
