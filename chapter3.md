@@ -235,7 +235,7 @@ Wage<- subset(Wage, select=- c(health, health_ins, region, race, year, sex, mari
 ```{r}
 
 test_function("qplot",
-              not_called_msg = "You didn't call `qplot()`")
+              not_called_msg = "You need to call `qplot()`")
 test_object("Wage")
 
 test_error()
@@ -361,10 +361,10 @@ test_object("test")
 test_function("dim",
               not_called_msg = "You didn't call `dim()` twice for `training` and `test`")
 
-test_function("head", not_called_msg = "You didn't call `head()` twice for `training` and `test`)
+test_function("head", not_called_msg = "You need to call `head()` twice for `training` and `test`")
 
 test_function("randomForest",
-              not_called_msg = "You didn't call `randomForest()`")
+              not_called_msg = "You need to call `randomForest()`")
               
 test_error()
 
@@ -421,8 +421,6 @@ head(compare_result)
 
 postResample(test$wage_range, pred_wage_range)
 
-
-
 ```
 
 *** =solution
@@ -451,24 +449,23 @@ postResample(test$wage_range, pred_wage_range)
 ```{r}
               
 test_function("predict",
-              not_called_msg = "You didn't call `predict()`")
+              not_called_msg = "You need to call `predict()`")
               
 test_object("pred_wage_range")
 
               
 test_function("data.frame",
-              not_called_msg = "You didn't call `data.frame()`")
+              not_called_msg = "You need to call `data.frame()`")
 
 test_function("head", 
-              not_called_msg = "You didn't call the `head() function`")
+              not_called_msg = "You need to call the `head() function`")
 
 test_function("postResample",
-              not_called_msg = "You didn't call `postResample()`")
+              not_called_msg = "You need to call `postResample()`")
 
 test_error()
 
 success_msg("Good work! At this point, you can accept your model and present your work or seek to improve your model.")
-
 
 ```
 
@@ -479,7 +476,7 @@ success_msg("Good work! At this point, you can accept your model and present you
 Your model depends on the quality of your dataset and the type of Machine Learning algorithm used. Therefore, to improve the accuracy of your model, you should:
 
 * Check what attributes affect our model the most and what variables to leave out in future analysis
-* Find out what other attributes affect a person's wage; we can use as predictors in future analysis
+* Find out what other attributes may affect wages and use these factors as predictors in future analysis
 * Tweak the algorithm (e.g. change the ntree value)
 * Use a different machine learning algorithm
 
@@ -545,10 +542,10 @@ varImpPlot(rf_model)
 ```{r}
 
 test_function("importance",
-              not_called_msg = "You didn't call `importance()`")
+              not_called_msg = "Try calling `importance()`")
 
 test_function("varImpPlot", 
-              not_called_msg = "You didn't call `varImpPlot()`")
+              not_called_msg = "Try calling `varImpPlot()`")
               
               
               
